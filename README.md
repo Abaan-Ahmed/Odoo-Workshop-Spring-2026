@@ -183,7 +183,7 @@ No local Python, PostgreSQL, or Odoo installation is required.
 Clone the project from GitHub:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Odoo-Workshop-2026.git
+git clone https://github.com/Abaan-Ahmed/Odoo-Workshop-Spring-2026
 ```
 
 Then navigate into the project folder:
