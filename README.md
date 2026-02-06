@@ -162,34 +162,107 @@ This layer demonstrates how backend data can be exposed publicly in a controlled
 
 ---
 
-## ▶️ How to Run the Project
+## ▶️ How to Set Up and Run the Project
 
-### 1. Start Docker Desktop
+This section explains how to set up the project **after downloading or cloning the repository**.
 
-Ensure Docker Desktop is running on your machine.
+### 1. Prerequisites
 
-### 2. Start the Environment
+Before starting, ensure the following tools are installed:
 
-From the project root:
+* **Docker Desktop** (Windows, macOS, or Linux)
+* **Git** (to clone the repository)
+* A modern web browser (Chrome, Firefox, Edge)
+
+No local Python, PostgreSQL, or Odoo installation is required.
+
+---
+
+### 2. Clone the Repository
+
+Clone the project from GitHub:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Odoo-Workshop-2026.git
+```
+
+Then navigate into the project folder:
+
+```bash
+cd Odoo-Workshop-2026
+```
+
+---
+
+### 3. Start Docker Desktop
+
+Make sure **Docker Desktop is running** before proceeding.
+
+This is required for Docker containers to start correctly.
+
+---
+
+### 4. Start the Odoo Environment
+
+From the project root directory, run:
 
 ```bash
 docker compose up -d
 ```
 
-### 3. Access Odoo
+This command will:
 
-Open a browser and go to:
+* Start a PostgreSQL database container
+* Start an Odoo 19 application container
+* Automatically link Odoo to the database
+
+The first startup may take a minute.
+
+---
+
+### 5. Access Odoo in the Browser
+
+Once the containers are running, open a browser and go to:
 
 ```
 http://localhost:8069
 ```
 
-### 4. Install the Module
+---
 
-* Enable Developer Mode
-* Go to Apps
-* Update Apps List
-* Install **Workshop Course**
+### 6. Create or Select a Database
+
+If this is the first time running the project:
+
+* Create a new database
+* Set the **master password** to `admin`
+* Choose any database name
+* Select a language
+
+---
+
+### 7. Install the Workshop Module
+
+After logging in:
+
+* Enable **Developer Mode**
+* Go to **Apps**
+* Click **Update Apps List**
+* Remove the **Apps** filter
+* Search for **Workshop Course**
+* Click **Install**
+
+---
+
+### 8. Stop the Environment (Optional)
+
+When finished working on the project, stop the containers with:
+
+```bash
+docker compose down
+```
+
+This safely stops Odoo and PostgreSQL while keeping all data intact.
 
 ---
 
