@@ -1,0 +1,17 @@
+<odoo>
+    <menuitem id="menu_workshop_root" name="Workshop"/>
+
+    <menuitem
+        id="menu_workshop_course"
+        name="Courses"
+        parent="menu_workshop_root"
+        action="action_workshop_course"
+    />
+
+    <menuitem
+        id="menu_workshop_student"
+        name="Students"
+        parent="menu_workshop_root"
+        action="action_workshop_student"
+    />
+</odoo>

@@ -1,0 +1,27 @@
+<odoo>
+    <template id="course_page">
+        <t t-call="website.layout">
+            <div class="container mt-4">
+                <h1 class="course-title">Available Courses</h1>
+
+                <div class="row">
+                    <t t-foreach="courses" t-as="course">
+                        <div class="col-md-4">
+                            <div class="course-card">
+                                <h3>
+                                    <t t-esc="course.name"/>
+                                </h3>
+                                <p>
+                                    <t t-esc="course.description"/>
+                                </p>
+                                <span class="price">
+                                    $<t t-esc="course.price"/>
+                                </span>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </t>
+    </template>
+</odoo>
