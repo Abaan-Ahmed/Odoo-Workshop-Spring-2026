@@ -205,25 +205,9 @@ Students can modify HTML and CSS and immediately see visual changes.
 
 ---
 
-## 🎓 Workshop Design
-
-The workshop is designed for **two sessions** (1 hour 15 minutes each):
-
-* **Session 1:**
-  Odoo architecture, Docker setup, modules, models, backend UI
-
-* **Session 2:**
-  Website integration, HTML/CSS customization, full-stack flow
-
----
-
 ## ✅ Conclusion
 
 This project demonstrates a realistic and educationally effective approach to teaching ERP and full-stack development using Odoo.
 It emphasizes modular thinking, clean architecture, and hands-on experimentation.
 
 ---
-
-## 📬 Contact
-
-For questions or feedback regarding this workshop material, please feel free to reach out.
